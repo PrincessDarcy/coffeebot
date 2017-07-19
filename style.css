@@ -222,6 +222,13 @@ section a:hover {
 .facebook{
 	color:#44619D;
 }
+.coffeebotandtext{
+ text-align:center;
+ float:left;
+     
+      margin-right:2%;
+      border: 1px solid #000;
+}
 .coffeebotandtext img{
         
  max-width: 200px;
