@@ -222,6 +222,14 @@ section a:hover {
 .facebook{
 	color:#44619D;
 }
+.coffeebotandtext img{
+        
+ max-width: 200px;
+ max-height:200px;
+ border: 1px solid #888;
+ margin-right:1%;
+ 
+ }
 #links a:hover {
 	color: #e3f233;
 	text-decoration:underline;
