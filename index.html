@@ -33,6 +33,7 @@
 <p>Avatar by <a href="http://dshou.deviantart.com/">DShou</a></p>
 </div>
 
+ <p>CoffeeBot is currently being recoded to work with Discord.Net CORE, so a lot of functionality is currently unavailable or being changed</p>
 <p>CoffeeBot is my first real solo project, which began on March 3rd, 2016.  The idea behind the project was to initially get myself situated and comfortable with the language and the API I was working with, but it expanded way beyond that!</p>
 <p>CoffeeBot is a pseudo-AI coded in C# .NET using an unofficial <a href="https://discordapp.com/">Discord</a> API called <a href="https://github.com/420foxbot/Discord.Net">Discord.Net</a>.  Discord is a text and voice client, similar to Skype or Teamspeak.  The product is still in development but is showing very promising results with what it is currently capable of.  I also have an interface that allows me to use CoffeeBot commands outside of servers where she is located.  At this point in time, CoffeeBot consists of over 1,900 lines of code.  Before anyone asks, I will not under ANY circumstances release any source code for this project.</p>
 <p>CoffeeBot is currently launched and maintained on 3 servers, with a user count ranging from 12 to over 150 users.  She is equipped with numerous commands and featured listed on the right, with more features added weekly!</p>
@@ -48,71 +49,29 @@
 <div id="commands">
 <h3>User Commands!</h3>
 <ul>
-<li><p>!bellyrubs - Displays cute Darcy</p></li>
-
 <li><p>!blep - Displays blep Darcy</p></li>
 
 <li><p>!boop - Coffee boops you....</p></li>
 
 <li><p>!boop - CoffeeBot boops a user</p></li>
 
-<li><p>!botadmins - Lists all users with access to CoffeeBot's mod level commands</p></li>
-
-<li><p>!cecil - ...</p></li>
-
-<li><p>!cg - ...</p></li>
-
-<li><p>!ci - Displays cuteness intensifies picture</p></li>
-
-<li><p>!ciy - DShou's Server Only - Forbidden ship</p></li>
-
 <li><p>!coffee - Coffee?</p></li>
-
-<li><p>!coinflip - Flips a coin</p></li>
 
 <li><p>!comcast - Dontcha know</p></li>
 
 <li><p>!commands - Prints Coffeebot's commands!</p></li>
 
-<li><p>!counters - Displays the server's counters</p></li>
-
-<li><p>!da - Pulls specified Deviantart Gallery</p></li>
-
 <li><p>!darcycon - Get your insulin ready</p></li>
-
-<li><p>!derpi - Pulls specified Derpibooru Artitst's Gallery</p></li>
-
-<li><p>!emotes - Displays all server emote codes to assist mobile users</p></li>
-
-<li><p>!explode - Uh...blow up people?  Into items?</p></li>
 
 <li><p>!find - Searches Derpibooru for an image matching the provided tags</p></li>
 
-<li><p>!flip - Flips text.  Back by popular demand</p></li>
-
-<li><p>!help - Basically if someone doesn't know about !commands</p></li>
-
 <li><p>!hidensfw - Toggles NSFW channels off</p></li>
 
-<li><p>!joined - Displays when user joined the server</p></li>
-
-<li><p>!lewd - T-that's lewd!</p></li>
+<li><p>!info - Displays when user joined the server</p></li>
 
 <li><p>!menu - Display's the menu to order from</p></li>
 
-<li><p>!modpon - More cute Darcy?</p></li>
-
-<li><p>!motto - Server Motto</p></li>
-
 <li><p>!order - Would you care for something to drink?</p></li>
-
-<li><p>!quote - Posts a quote.</p></li>
-
-<li><p>!ref - Displays Darcy's Ref sheet</p></li>
-
-<li><p>!rolecolor - Darcy's Server Only - Allows user to set their own role colour</p></li>
-
-<li><p>!rolename - Darcy's Server Only - Allows user to set their own role name</p></li>
 
 <li><p>!roll - Rolls a die.  Eg. Roll 2d20</p></li>
 
@@ -123,8 +82,8 @@
 <li><p>!ship - Ships you with a random user</p></li>
 
 <li><p>!shownsfw - Toggles NSFW channels on</p></li>
-
-<li><p>!tea - I hate you all</p></li>
+ 
+ <li><p>!tally - Shows menu order totals</p></li>
 
 <li><p>!team alpha - Team Alpha - Awesome Reds</p></li>
 
@@ -136,9 +95,6 @@
 
 <li><p>!throw - CoffeeBot throws things at you</p></li>
 
-<li><p>!tumblr - Pulls specified Tumblr Blog</p></li>
-
-
 </ul>
   
   
@@ -147,71 +103,26 @@
 <div id="admin">
   <h3>Admins Commands!</h3>
 <ul>
-<li><p>!addblacklist - Shou's Server Only - Adds user to the adult channel blacklist(Uses user's NAME)</p></li>
+<li><p>!blacklist - Shou's Server Only - Adds user to the adult channel blacklist(Uses user's NAME)</p></li>
 
-<li><p>!addexplicittag - Adds to the server's nsfw filter</p></li>
+<li><p>!addnsfwtag - Adds to the server's nsfw filter</p></li>
 
 <li><p>!addorder - Adds an order item to the database</p></li>
 
-<li><p>!addsafetag - Adds to the server's sfw filter</p></li>
-
-<li><p>!allowedchannels - Pulls a list of bot-activated channels and if they are nsfw set or not</p></li>
-
-<li><p>!currentintro - Shows the current set intro message for the server.</p></li>
+<li><p>!addsfwtag - Adds to the server's sfw filter</p></li>
 
 <li><p>!listfilters - Prints SFW and NSFW filters for the server!</p></li>
 
 <li><p>!listroles - Prints role and role IDs!</p></li>
 
-<li><p>!listusers - Prints users and user IDs!</p></li>
-
-<li><p>!menutally - Shows menu order totals</p></li>
-
-<li><p>!printfilters - Prints a list of the server's seach filters(Both sfw and nsfw)</p></li>
-
 <li><p>!quit - Will shut down CoffeeBot</p></li>
-
-<li><p>!removeblacklist - Shou's Server Only - Removes user from the adult channel blacklist(Uses User's NAME)</p></li>
-
-<li><p>!removeexplicittag - Removes from the server's nsfw filter</p></li>
-
-<li><p>!removeorder - Removes an order item from the database(Uses id number)</p></li>
-
-<li><p>!removesafetag - Removes from the server's sfw filter</p></li>
-
-<li><p>!restart - Restarts the bot, only to be used if !quit is unresponsive</p></li>
-
-<li><p>!start - Starts the bot</p></li>
-
-<li><p>!timeout - Puts a user in a timeout state for an hour(Mention user!!)</p></li>
-
-<li><p>!userinfo - Pulls user warning sheet (Mention user....or try to!)</p></li>
-
-<li><p>!warn - Warns a user(Mention user!!)</p></li>
 
 
   </ul>
 <h3>Server Owner Commands!</h3>
 <ul>
-<li><p>!allowbots - Disables the anti-bot system on this channel</p></li>
-
-<li><p>!botclear - Clears CoffeeBot messages</p></li>
-
-<li><p>!disallowbots - Enables the anti-bot system on this channel</p></li>
-
-<li><p>!givemember - Adds Member role to all users</p></li>
-
-<li><p>!purge - Purges the indicated number of messages from a channel</p></li>
-
-<li><p>!removeallroles - Removes Member role and R18 roles for all users</p></li>
-
-<li><p>!setintro - Creates or updates the intro message for this server</p></li>
-
-<li><p>!toggleintro - Enabled/Disables Intro</p></li>
-
-<li><p>!togglensfw - Sets channel to allow/disallow NSFW image searches</p></li>
-
-
+ 
+ <li><p>!currentintro - Shows the current set intro message for the server.</p></li>
 
 </ul>
  <h3>Developer Commands!</h3>
@@ -222,41 +133,11 @@
 
 <li><p>!addquote - Adds a quote to the database</p></li>
 
-<li><p>!announce - CoffeeBot's blanket announce command, for development updates or if I want to abuse it for some reason</p></li>
-
-<li><p>!botrole - Sets the bot role(Uses Role ID)</p></li>
-
-<li><p>!commandcount - Prints number of registered commands</p></li>
-
-<li><p>!html - Prints Coffeebot's commands in html tags for the site</p></li>
-
-<li><p>!modrole - Sets the role CoffeeBot uses to determine if user has admin privileges(Uses Role ID)</p></li>
-
-<li><p>!nsfwrole - Sets the NSFW role for NSFW channel access(Uses Role ID)</p></li>
-
-<li><p>!pulltime - Displays when user joined the server</p></li>
-
 <li><p>!removeitem - Removes an item from the database(Uses id number)</p></li>
 
 <li><p>!removequote - Removes a quote from the database(Uses id number)</p></li>
 
-<li><p>!setannouncechannel - Sets the channel to receive announcements from the announce command</p></li>
-
-<li><p>!setavatar - Set's CoffeeBot's Avatar</p></li>
-
-<li><p>!setgame - Set's CoffeeBot's game message</p></li>
-
-<li><p>!setname - Set's CoffeeBot's Name</p></li>
-
-<li><p>!setnick - Set's CoffeeBot's Nickname</p></li>
-
-<li><p>!setupserver - Sets up server in the database</p></li>
-
 <li><p>!togglelogging - Enables/Disables server logging</p></li>
-
-<li><p>!update - Used after bot rebuild to ensure latest version is used.</p></li>
-
-<li><p>!whydidyoucodethis - Pulls a bunch of info from the database I really don't need</p></li>
 
 </ul> 
 </div>
